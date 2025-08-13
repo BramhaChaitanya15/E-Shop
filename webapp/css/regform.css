@@ -1,0 +1,85 @@
+/*adjust registration form for validation properties
+placing icons on and beside input field*/
+.form-group{
+    position: relative;
+}
+.fa-solid{
+    position: absolute;
+    margin-top: -27px;
+    right: -20px;
+}
+.register .form-group .toggle-password{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 34px;
+    right: 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.register .form-group .toggle-password.active i.fa-eye{
+    display: none;
+}
+.register .form-group .toggle-password.active i.fa-eye-slash{
+    display: inline;
+}
+.register .form-group .toggle-password i.fa-eye-slash{
+    display: none;
+}
+
+/*placing dropdown view for the password palicies*/
+.register .form-group .password-policies{
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 0px;
+    height: 0px;
+    background: lightgoldenrodyellow;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    opacity: 1;
+    overflow: hidden;
+    transition: height 300ms ease-in-out,
+                opacity 300ms ease-in-out;
+}
+.register .form-group .password-policies.active{
+    opacity: 1;
+    padding: 10px;
+    height: 180px;
+}
+.register .form-group .password-policies > div{
+    margin: 10px 15px;
+    font-weight: 600;
+    color: red;
+}
+.register .form-group .password-policies > div.active{
+    color: darkgreen;
+}
+/*placing error and success icons*/
+.register .form-group.error .fa-solid{
+    color: red;
+}
+.register .form-group.success .fa-solid{
+    color: limegreen;
+}
+.register .form-group.error input, .register .form-group.error textarea{
+    border-color: red;
+    border-width: 3px;
+}
+.register .form-group.success input, .register .form-group.success textarea{
+    border-color: limegreen;
+    border-width: 3px;
+}
+
+/*setting error message*/
+.register .form-group.error .msg{
+    color: red;
+    display: block;
+}
+

@@ -1,0 +1,47 @@
+/* css to adjust images and quantity slider for products */
+.btm-slider img{
+    max-height: 50px;
+    max-width: 100%;
+    width: auto;
+    bottom: 100px;
+    margin: 0 3px;
+    border: 2px solid #a00037;
+}
+
+.btm-slider img:hover{
+    background: #cccccc;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-control-next {
+    filter: invert(100%);
+}
+
+.scroller {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid black;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.scroller span{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.scroller span.num{
+    border-left: 5px solid #e2e2e2;
+    border-right: 5px solid #e2e2e2;
+    pointer-events: none;
+}
